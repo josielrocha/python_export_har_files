@@ -56,6 +56,8 @@ def export_har_file(filename: str) -> None:
             with open(final_path, 'wb') as f:
                 f.write(bytes)
 
+            logger.info("[OK] {}".format(final_path))
+
 def export_har_files():
     files = Path(data_directory).rglob("*.har.json")
     for file in files:
