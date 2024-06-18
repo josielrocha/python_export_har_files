@@ -11,7 +11,7 @@ from models import Resource
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-root_folder = Path(__file__).parent.parent.absolute()
+root_folder = Path(__file__).parent.absolute()
 
 data_directory = path.join(
     root_folder, 'resources/har_files')
